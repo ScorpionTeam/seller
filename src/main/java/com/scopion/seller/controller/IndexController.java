@@ -30,7 +30,6 @@ public class IndexController {
     public BaseResult profile() {
         Seller seller = new Seller();
         seller.setId(0001L);
-        seller.setName("sa我就是烦");
         seller.setCreateDate(new Date());
         return BaseResult.success(seller);
     }
