@@ -1,4 +1,4 @@
-package com.scopion.result;
+package com.scopion.seller.result;
 
 /**
  * Created on 2017/9/16.

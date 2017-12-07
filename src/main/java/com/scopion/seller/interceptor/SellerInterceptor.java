@@ -1,4 +1,4 @@
-package com.scopion.interceptor;
+package com.scopion.seller.interceptor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +19,8 @@ public class SellerInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         logger.info("preHandle");
+        //返回信息编码格式
+        httpServletResponse.setContentType("application/json;charset=UTF-8");
         return true;
     }
 
